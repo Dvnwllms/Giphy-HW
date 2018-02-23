@@ -1,1 +1,1 @@
-var topics = ["Gundam", "Star Wars", "Regular Show", "Deal With It", "Intensifies", "Transformers", "Power Rangers", "Pokemon", ""]
+var topics = ["Gundam", "Star Wars", "Regular Show", "Deal With It", "Intensifies", "Transformers", "Power Rangers", "Pokemon", "Comics", "Video Games"]

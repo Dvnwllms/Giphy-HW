@@ -1,6 +1,4 @@
-$( document ).ready(function() {
-
-// Array of topics //
+// Array of topics and new topics will be pushed here as well //
 var topics = ["Gundam", "Star Wars", "Regular Show", "Deal With It", "Intensifies", "Transformers", "Power Rangers", "Pokemon", "Comics", "Video Games"];
 
 // Function for making buttons for topics //
@@ -18,10 +16,22 @@ function renderButtons() {
         btn.text(topics[i]);  // Assigns text to the buttons created in the loop //
         $("#buttons-view").append(btn);  // Uses JQuery to append each button created in the loop to the "gift-view" div element in the DOM //
     }
-
 }
 
-});
+// Function to add a new button //
+function addNewButton() {
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -40,4 +50,26 @@ function renderButtons() {
 function showGifs() {
     var gif = $(this).attr("data-name");  // Sets a variable where "this" refers to the window and assigns the data from the topics array used in the AJAX call //
     var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gif + "&api_key=XpskAUNFvqoc7Eng4J1vDoNVut6RD6vo&limit=10"
+
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+      }).then(function(response) {
+      
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -1,10 +1,12 @@
-// Array of topics and new topics will be pushed here as well //
+$(document).ready(function(){  // COMPLETELY CRITICAL TO GET BUTTONS TO POPULATE WHEN PAGE LOADS //
+
+    // Array of topics and new topics will be pushed here as well //
 var topics = ["Gundam", "Star Wars", "Regular Show", "Deal With It", "Intensifies", "Transformers", "Power Rangers", "Pokemon", "Comics", "Video Games"];
 
 // Function for making buttons for topics //
 function renderButtons() {
 
-    // Uses JQuery to delete or empty gifs out of the "gif-view" dive element in the DOM before making new ones in order to avoid repeat buttons //
+    // Uses JQuery to delete or empty buttons out of the "buttons-view" div element in the DOM before making new ones in order to avoid repeat buttons //
     $("#buttons-view").empty();
 
     // For loop for running through the entire topics array //
@@ -18,12 +20,18 @@ function renderButtons() {
     }
 }
 
+renderButtons();  // REMEMBER TO CALL FUNCTIONS AFTER DEFINING THEM //
+
 // Function to add a new button //
 function addNewButton() {
     $("#addGif").on("click", function() {
-        var newTopic = $("#topic-input").val().trim();
+        var topic = $("#topic-input").val().trim();
     });
 }
+
+
+})
+
 
 
 

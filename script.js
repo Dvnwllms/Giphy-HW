@@ -20,7 +20,9 @@ function renderButtons() {
 
 // Function to add a new button //
 function addNewButton() {
-    
+    $("#addGif").on("click", function() {
+        var newTopic = $("#topic-input").val().trim();
+    });
 }
 
 

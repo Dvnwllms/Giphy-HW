@@ -44,7 +44,7 @@ $( document ).ready(function() { // COMPLETELY CRITICAL TO GET BUTTONS TO POPULA
         // Function to show gifs //
         function displayGifs(){
             var gifs = $(this).attr("data-name");  // Sets a variable where "this" refers to the window and assigns the data from the topics array used in the AJAX call //
-            var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gifs + "&api_key=XpskAUNFvqoc7Eng4J1vDoNVut6RD6vo&limit=10";
+            var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gifs + "&api_key=XpskAUNFvqoc7Eng4J1vDoNVut6RD6vo&limit=10";
             
             $.ajax({  // Make the AJAX call to the queryURL //
                 url: queryURL,
